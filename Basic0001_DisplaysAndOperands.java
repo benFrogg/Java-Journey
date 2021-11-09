@@ -7,7 +7,7 @@
 
 import java.util.Scanner;
 
-public class firstProj {
+public class Basic0001_DisplaysAndOperands {
     // Scanner variable
     private static Scanner input;
 
@@ -16,6 +16,7 @@ public class firstProj {
     private static final String LINE = "----------------------------------------------------------------------------------";
     private static final String EQUALLINE = "===============================================================================";
 
+    // A function that takes in cost argument and calculate the GST price
     private static double calculateGST(double cost)
     {
         double GSTPrice = cost * 0.07;
@@ -123,6 +124,7 @@ public class firstProj {
         System.out.println("Items         Quantity        Cost($)     GST(7%)");
         System.out.println(LINE);
 
+        // Calculating all the values needed
         double cost4th = temp4th * price4th;
         double GST4th = calculateGST(cost4th);
         double cost5th = temp5th * price5th;
@@ -148,6 +150,7 @@ public class firstProj {
         System.out.printf("Subtotal Cost:    *****     $%.2f      $%.2f", preGSTCost, totalGST);
         System.out.printf("\nTotal Cost:       *****     $%.2f%n", preGSTCost + totalGST);
         
+        // Display the inventory again with updated available quantities
         System.out.println();
         System.out.println(HASHLINE);
         System.out.println();
